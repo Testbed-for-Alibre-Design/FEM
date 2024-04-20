@@ -50,8 +50,9 @@ Module Program
                                 End Sub)
         thread.SetApartmentState(ApartmentState.STA)
         thread.Start()
+        'TODO: Add mini logger
         Console.WriteLine(WindowTitleDesignName & " is ready...")
-        Console.WriteLine(WindowTitleDesignName & "WindowState = WindowState.Minimized")
+        Console.WriteLine(WindowTitleDesignName & " WindowState = WindowState.Minimized")
         Console.ReadLine()
     End Sub
     Private Sub BuildGrid(grid As Grid)
