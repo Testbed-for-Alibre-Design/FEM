@@ -50,7 +50,7 @@ Module Program
                                 End Sub)
         thread.SetApartmentState(ApartmentState.STA)
         thread.Start()
-        Console.WriteLine(WindowTitleDesignName & "is ready...")
+        Console.WriteLine(WindowTitleDesignName & " is ready...")
         Console.WriteLine(WindowTitleDesignName & "WindowState = WindowState.Minimized")
         Console.ReadLine()
     End Sub
