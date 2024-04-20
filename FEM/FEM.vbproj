@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FEM</RootNamespace>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWinForms>true</UseWinForms>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Syncfusion.Grid.Wpf">
+      <HintPath>..\vendor\Syncfusion.Grid.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WPF">
+      <HintPath>..\vendor\Syncfusion.GridCommon.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSkinManager.WPF">
+      <HintPath>..\vendor\Syncfusion.SfSkinManager.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfTreeView.WPF">
+      <HintPath>..\vendor\Syncfusion.SfTreeView.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base">
+      <HintPath>..\vendor\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF">
+      <HintPath>..\vendor\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Windows11Dark.WPF">
+      <HintPath>..\vendor\Syncfusion.Themes.Windows11Dark.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Windows11Light.WPF">
+      <HintPath>..\vendor\Syncfusion.Themes.Windows11Light.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Wpf">
+      <HintPath>..\vendor\Syncfusion.Tools.WPF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
