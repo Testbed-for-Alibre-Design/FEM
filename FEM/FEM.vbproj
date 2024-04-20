@@ -1,14 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <RootNamespace>FEM</RootNamespace>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWinForms>true</UseWinForms>
-    
   </PropertyGroup>
-
   <ItemGroup>
     <Reference Include="Syncfusion.Grid.Wpf">
       <HintPath>..\vendor\Syncfusion.Grid.WPF.dll</HintPath>
@@ -38,5 +35,4 @@
       <HintPath>..\vendor\Syncfusion.Tools.WPF.dll</HintPath>
     </Reference>
   </ItemGroup>
-
 </Project>
