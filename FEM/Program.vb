@@ -38,7 +38,7 @@ Module Program
                                         .Width = 1920,
                                         .Height = 1080,
                                         .WindowStartupLocation = WindowStartupLocation.CenterScreen,
-                                                                               .WindowState = WindowState.Minimized,
+                                        .WindowState = WindowState.Minimized,
                                         .WindowStyle = WindowStyle.SingleBorderWindow,
                                         .Background = Brushes.Black
                                     }
@@ -53,7 +53,28 @@ Module Program
         'TODO: Add mini logger
         Console.WriteLine(WindowTitleDesignName & " is ready...")
         Console.WriteLine(WindowTitleDesignName & " WindowState = WindowState.Minimized")
-        Console.ReadLine()
+        Dim keepRunning As Boolean = True
+        Console.WriteLine("Enter command ('/h' for list of commands):")
+        While keepRunning          
+            Dim command As String = Console.ReadLine().ToLower()
+            Select Case command
+                Case "/r" 'TODO: Add restart functionality
+                    Console.WriteLine("Restarting the application...")
+                Case "/h"
+                    ShowHelp()
+                Case "/e"
+                    Environment.Exit(0)
+                Case Else
+                    Console.WriteLine("Invalid command. Type 'help' to see the list of valid commands.")
+            End Select
+        End While
+    End Sub
+    Private Sub ShowHelp()
+        ' This function shows the help instructions.
+        Console.WriteLine("Available commands:")
+        Console.WriteLine("  /r - Restarts the application (not implemented)")
+        Console.WriteLine("  /h    - Shows this help message")
+        Console.WriteLine("  /e    - Kills the application")
     End Sub
     Private Sub BuildGrid(grid As Grid)
         grid.Background = Brushes.Black
